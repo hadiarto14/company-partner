@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card mb-4" style="border-radius: 10px">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <div>
+          <p class="card-title fs-4">Freelance Contact Directory</p>
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item active">Home</li>
+          </ol>
+        </div>
+        <button type="button" class="btn btn-primary">
+          <a class="nav-link" routerLink="/add">Add new Contact</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <app-partner-content [partners]="partners"></app-partner-content>
+</div>

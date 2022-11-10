@@ -1,0 +1,32 @@
+{
+  "freelancers": [
+    {
+      "id": 1,
+      "name": "Murphy",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    },
+    {
+      "id": 2,
+      "name": "Eddie",
+      "phone": "25565115",
+      "skill": "Devops Engineer",
+      "notes": "he has quality to maintain production environment"
+    },
+    {
+      "id": 3,
+      "name": "Ruud van",
+      "phone": "25565115",
+      "skill": "UX Designer",
+      "notes": "he has quality to create excelent UX"
+    },
+    {
+      "id": 4,
+      "name": "Eusebio",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    }
+  ]
+}
