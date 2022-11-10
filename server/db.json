@@ -8,13 +8,6 @@
       "notes": "he has quality to build angular application"
     },
     {
-      "id": 2,
-      "name": "Eddie",
-      "phone": "25565115",
-      "skill": "Devops Engineer",
-      "notes": "he has quality to maintain production environment"
-    },
-    {
       "id": 3,
       "name": "Ruud van",
       "phone": "25565115",
@@ -27,6 +20,13 @@
       "phone": "25565115",
       "skill": "Angular Developer",
       "notes": "he has quality to build angular application"
+    },
+    {
+      "name": "Hadiarto B",
+      "skill": "Django, Vue",
+      "phone": "082216862277",
+      "notes": "Django developer and Vue developer",
+      "id": 5
     }
   ]
 }

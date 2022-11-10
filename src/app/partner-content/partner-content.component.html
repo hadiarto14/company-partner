@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-lg-4" *ngFor="let partner of partners">
+  <div class="col-lg-4" *ngFor="let partner of partners | filter:search">
     <div class="card mb-4 shadow " style="border-radius: 10px;">
       <div class="card-body text-center">
         <img
@@ -8,7 +8,7 @@
           class="rounded-circle img-fluid shadow"
           style="width: 150px"
         />
-        <p class="my-3 fs-5">{{ partner.name |filter:searchText}}</p>
+        <p class="my-3 fs-5">{{ partner.name }}</p>
         <p class="text-muted mb-1">{{ partner.skill }}</p>
 
         <p class="mb-4 text-success">

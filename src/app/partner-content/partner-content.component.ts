@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { Partner } from '../model/partner';
 import { PartnerService } from '../service/partner.service';
 import { ConfirmationComponent } from '../confirmation/confirmation.component';
+import { NavbarComponent } from '../navbar/navbar.component';
+
 @Component({
   selector: 'app-partner-content',
   templateUrl: './partner-content.component.html',
@@ -10,11 +12,12 @@ import { ConfirmationComponent } from '../confirmation/confirmation.component';
 })
 export class PartnerContentComponent implements OnInit {
   @Input() partners!: Partner[]
-
+  search!:string;
   constructor(private partnerService: PartnerService, private dialog: MatDialog) {
   }
 
   ngOnInit(): void {
+    this.partnerService.currentSearch.subscribe(a => this.search = a);
   }
 
   remove(id: number) {

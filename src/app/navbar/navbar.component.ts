@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { PartnerService } from '../service/partner.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  searchText! : string;
-  constructor() { }
+  public searchText! : string;
+  constructor(private parentService:PartnerService) { }
 
   ngOnInit(): void {
+  }
+  sendData(e:string){
+    this.parentService.getSearch(e)
   }
 
 }
